@@ -9,17 +9,6 @@ Professional NestJS backend for VReal cloud storage platform with file managemen
 
 ---
 
-# 🚀 VReal Server - Cloud Storage Backend API
-
-Professional NestJS backend for VReal cloud storage platform with file management, granular permissions, email notifications, and real-time updates.
-
-[![NestJS](https://img.shields.io/badge/NestJS-11.0-E0234E?logo=nestjs)](https://nestjs.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript)](https://www.typescriptlang.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql)](https://www.postgresql.org/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)](https://www.docker.com/)
-
----
-
 ## ✨ Features Overview
 
 ### 🔐 Authentication & Security
