@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolvePackageJsonExports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@db/data-access/database": [
+        "src/libs/data-access/database/src/index"
+      ],
+      "@db/data-access/data-access-user": [
+        "src/libs/data-access/data-access-user/src/index.ts"
+      ],
+      "@db/data-access/data-access-file": [
+        "src/libs/data-access/data-access-file/src/index.ts"
+      ],
+      "@db/data-access/data-access-folder": [
+        "src/libs/data-access/data-access-folder/src/index.ts"
+      ],
+      "@db/data-access/data-access-file-permission": [
+        "src/libs/data-access/data-access-file-permission/src/index.ts"
+      ],
+      "@app/common": [
+        "src/libs/common/src/index.ts"
+      ],
+      "@app/casl": [
+        "src/libs/casl/src/index.ts"
+      ],
+      "@app/websocket": [
+        "src/libs/websocket/src/index.ts"
+      ],
+      "@app/email": [
+        "src/libs/email/src/index.ts"
+      ]
+    }
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Shared</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .content {
+      padding: 40px 30px;
+    }
+    .greeting {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .message {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .resource-info {
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 4px;
+    }
+    .resource-info h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+      font-size: 16px;
+    }
+    .resource-info p {
+      margin: 5px 0;
+      color: #666;
+      font-size: 14px;
+    }
+    .permission-badge {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 14px 32px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 16px;
+      margin: 20px 0;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #5568d3;
+    }
+    .footer {
+      background: #f8f9fa;
+      padding: 30px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📁 New Shared {{resourceType}}</h1>
+    </div>
+    
+    <div class="content">
+      <p class="greeting">Hi {{recipientName}},</p>
+      
+      <p class="message">
+        <strong>{{ownerName}}</strong> has shared a {{resourceType}} with you on VReal.
+      </p>
+      
+      <div class="resource-info">
+        <h3>📄 {{resourceName}}</h3>
+        <p><strong>Type:</strong> {{resourceType}}</p>
+        <p><strong>Shared by:</strong> {{ownerName}}</p>
+        <p><strong>Your permission:</strong> <span class="permission-badge">{{permission}}</span></p>
+        <p style="margin-top: 12px; color: #555;">{{permissionDescription}}</p>
+      </div>
+      
+      <center>
+        <a href="{{accessUrl}}" class="cta-button">
+          🔗 Open {{resourceType}}
+        </a>
+      </center>
+      
+      <p style="color: #666; font-size: 14px; margin-top: 30px;">
+        Click the button above to access the shared {{resourceType}}. You can view, download, and manage it according to your permission level.
+      </p>
+    </div>
+    
+    <div class="footer">
+      <p>This is an automated message from <strong>VReal</strong></p>
+      <p>If you didn't expect this email, you can safely ignore it.</p>
+      <p style="margin-top: 15px;">
+        <a href="{{baseUrl}}">Visit VReal</a> | 
+        <a href="{{baseUrl}}/help">Help Center</a>
+      </p>
+      <p style="margin-top: 15px; color: #999; font-size: 12px;">
+        © {{year}} VReal. All rights reserved.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
